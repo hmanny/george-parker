@@ -1,734 +1,791 @@
-/*
+    /*
 ****************************** CSS RESET**************************/
-/* http://meyerweb.com/eric/tools/css/reset/ 
+    /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-/*
-****************************** END CSS RESET**************************/
-
-html {
-    height: 100%;
-}
-
-body {
-    color: #eee;
-    margin: 0;
-    height: 100%;
-    text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
-}
-
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-}
-
-p,
-ul {
-    line-height: 1.6;
-    font-size: 15px
-}
-
-h1 {
-    padding-bottom: 1em;
-    font-size: 31px;
-    font-family: 'antoniobold', sans-serif;
-    text-transform: uppercase;
-}
-
-.contain {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1em;
-    position: relative;
-    height: 100%;
-}
-
-.full-height {
-    height: 100%;
-    background-size: cover;
-}
-
-.half_full,
-.third_full,
-.two_thirds_full {
-    padding: 45px 0;
-    background-size: cover;
-}
-
-.link {
-    text-align: right;
-    font-family: "LatoBlack";
-    font-style: italic;
-    text-transform: uppercase;
-    font-size: 18px;
-    text-align: center;
-}
-
-.link a {
-    color: #0e8eb8;
-    margin: 0;
-}
-
-.desk {
-    display: none;
-}
-
-.menu_button {
-    position: fixed;
-    margin-top: 72px;
-    right: 0;
-    font-size: 35px;
-    color: white;
-    background: none;
-    border: none;
-    outline: none;
-    z-index: 901;
-}
-
-nav.mob {
-    position: fixed;
-    display: none;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    text-align: center;
-    text-transform: uppercase;
-    z-index: 899;
-}
-
-nav.mob ul {
-    margin-top: 80px;
-}
-
-.mob .menu li {
-    padding: 0.4em 10px;
-}
-
-.mob .menu li a {
-    color: #eee;
-    font-family: "antoniobold", sans-serif;
-    text-decoration: none;
-    font-size: 17pt;
-}
-
-.banner {
-    background-image: url(/img/20th-Commonwealth-Games---014.jpg);
-}
-
-.banner h1 {
-    font-family: 'antoniobold', serif;
-    position: absolute;
-    text-transform: uppercase;
-    top: 45%;
-    width: 50%;
-    font-size: 40px;
-}
-
-.banner h1 span {
-    font-family: 'antoniolight', serif;
-    text-transform: uppercase;
-    top: 50%;
-    font-weight: normal;
-    font-size: 30px;
-}
-
-.logo {
-    position: relative;
-    margin: 0;
-    top: 65px;
-    max-width: 80%;
-}
-
-.about {
-    background-color: #0e0e0e;
-    position: relative;
-    overflow-x: hidden;
-}
-
-.about p {
-    font-family: 'Lato', sans-serif;
-    line-height: 1.8;
-    font-size: 15px;
-}
-
-.about p,
-.about h1 {
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.about .link {
-    display: block;
-}
-
-.about img {
-    display: none;
-}
-
-.player_info {
-    background: linear-gradient(to right, #0c82a9, #035e87), #0c82a9;
-}
-
-.player_info ul {
-    margin: 0 auto;
-    text-align: center;
-    width: 360px;
-    max-width: 100%;
-    font-family: "Lato", sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    line-height: 2.2;
-}
-
-.player_info ul li {
-    padding: 0 10px;
-}
-
-.player_info ul li span {
-    font-weight: bold;
-    padding-right: 0.5em;
-}
-
-.player_info h1 {
-    font-size: 31px;
-    opacity: 0.85;
-    padding-top: 10px;
-}
-
-.player_info img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    position: relative;
-    bottom: -45px;
-}
-
-.events {
-    background-image: url(/img/eventsbackground.jpg);
-    overflow-x: hidden;
-}
-
-.events h1 {
-    text-align: center;
-    opacity: 0.85;
-    padding-top: 10px;
-}
-
-.events .link {
-    text-align: center;
-}
-
-.events .event_box {
-    display: block;
-    margin: 0 auto;
-    width: 440px;
-    height: 250px;
-    font-family: 'antoniobold', sans-serif;
-    padding-bottom: 30px;
-    max-width: 75%;
-}
-
-.events .event_box .date {
-    background: linear-gradient(#0c82a9, #035e87), #0c82a9;
-    float: left;
-    text-align: center;
-    font-family: 'antoniolight', sans-serif;
-    padding: 48px 21px;
-    line-height: 1.2;
-}
-
-.events .event_box .date div:first-child {
-    font-size: 24px;
-    padding-bottom: 26px;
-}
-
-.events .event_box .date div:last-child {
-    font-size: 62px;
-}
-
-.events .event_box .event_title h3 {
-    position: relative;
-    left: 10px;
-    padding: 40px 10px 45px 20px;
-    font-size: 22px;
-    color: #444;
-    line-height: 1.4;
-}
-
-.events .event_box .event_title h2 {
-    position: relative;
-    left: 10px;
-    font-size: 26px;
-    padding-right: 10px;
-    line-height: 1.2;
-    padding-bottom: 30px;
-}
-
-.events .event_box .event_title {
-    background: white;
-    height: 100%;
-    color: #222;
-}
-
-.gallery {
-    background-image: url(/img/gallerybg.jpg);
-}
-
-.gallery h1 {
-    text-align: center;
-    opacity: 0.85;
-}
-
-.gallery .link {
-    text-align: center;
-}
-
-.gallery .link a {
-    color: #eee;
-}
-
-.sponsers {
-    background-image: url(/img/sponserbg.jpg);
-}
-
-.sponsers {
-    text-align: center;
-}
-
-.sponsers h1 {
-    padding-bottom: 0;
-    padding-top: 40px;
-    opacity: 0.85;
-}
-
-.sponsers li {
-    width: 100%;
-    padding: 2em 0;
-}
-
-.sponsers .link a {
-    color: #eee;
-}
-
-footer {
-    background-color: #0e0e0e;
-    font-family: 'lato', sans-serif;
-    text-align: center;
-}
-
-footer ul {
-    display: none;
-}
-
-footer span {
-    display: inline-block;
-    padding 40px;
-    width: 100%;
-    margin: 20px 0;
-    vertical-align: middle;
-}
-
-footer span:last-child img {
-    width: 200px;
-}
-
-@media (min-height: 600px) {
-    .banner h1 {
-        font-size: 77px;
-        display: inline-block;
-        width: 50%;
-    }
-}
-
-@media (min-width: 600px) {
-    p {
-        font-size: 18px;
-    }
-    .sponsers ul {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .sponsers li {
-        display: inline-block;
-        width: 240px;
-        padding: 2em 38px;
+    
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
         margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
     }
-    .sponsers li:first-child {
-        padding-left: 0;
-    }
-    .sponsers li:nth-child(4) {
-        padding-right: 0;
-    }
-    .menu_button {
-        margin-top: 60px;
-        font-size: 55px;
-    }
-    .events .event_box .date {
-        padding-left: 42px;
-        padding-right: 42px;
-    }
-}
-
-@media (min-width: 1024px) {
-    p {
-        font-size: px;
-    }
-    .desk {
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
         display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol,
+    ul {
+        list-style: none;
+    }
+    blockquote,
+    q {
+        quotes: none;
+    }
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    /*
+****************************** END CSS RESET**************************/
+    
+    html {
+        height: 100%;
+    }
+    body {
+        color: #fff;
+        margin: 0;
+        height: 100%;
+    }
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+    }
+    *,
+    *:before,
+    *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    p,
+    ul {
+        line-height: 1.6;
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+    h1 {
+        padding-bottom: 1em;
+        font-size: 31px;
+        font-family: 'antoniobold', sans-serif;
+        text-transform: uppercase;
+    }
+    .contain {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1em;
+        position: relative;
+        height: 100%;
+    }
+    .full-height {
+        height: 100%;
+        background-size: cover;
     }
     .half_full,
     .third_full,
     .two_thirds_full {
-        padding: 115px 0;
+        padding: 45px 0;
+        background-size: cover;
     }
-    nav.desk .menu {
-        display: block;
-        list-style-type: none;
+    .link {
         text-align: right;
-        font-family: 'antoniobold', serif;
-    }
-    nav.desk .menu li {
-        display: inline-block;
-        padding: 0 10px;
-        margin-top: 16px;
-    }
-    nav.desk .menu li a {
-        color: white;
+        font-family: 'LatoBlack', sans-serif;
+        font-style: italic;
         text-transform: uppercase;
-        text-decoration: none;
         font-size: 18px;
+        text-align: center;
     }
-    nav.desk .menu li a:hover {
-        text-decoration: underline;
+    .link a {
+        color: #0e8eb8;
+        margin: 0;
+    }
+    .desk {
+        display: none;
     }
     .menu_button {
+        position: fixed;
+        margin-top: 63px;
+        right: 0;
+        font-size: 40px;
+        color: white;
+        background: none;
+        border: none;
+        outline: none;
+        z-index: 901;
+    }
+    .menu_button:before {
+        font-family: 'icomoon';
+        content: "\e600";
+    }
+    .menu_button.is-open:before {
+        font-family: 'icomoon';
+        content: "\e601";
+    }
+    nav.mob {
+        position: fixed;
         display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 899;
+    }
+    nav.mob ul {
+        margin-top: 80px;
+    }
+    .mob .menu li {
+        padding: 0.4em 10px;
+    }
+    .mob .menu li a {
+        color: #fff;
+        font-family: "antoniobold", sans-serif;
+        text-decoration: none;
+        font-size: 17pt;
+    }
+    .banner {
+        background-image: url(/georgeparkersquash-co-uk/_img/20th-Commonwealth-Games---014.jpg);
+        background-position: center center;
+    }
+    .previewFrame .banner {
+        height: 500px;
+    }
+    .banner h1 {
+        font-family: 'antoniobold', serif;
+        position: absolute;
+        text-transform: uppercase;
+        top: 45%;
+        width: 50%;
+        font-size: 40px;
+    }
+    .banner h1 span {
+        font-family: 'antoniolight', serif;
+        text-transform: uppercase;
+        top: 50%;
+        font-weight: normal;
+        font-size: 30px;
+    }
+    .logo {
+        position: relative;
+        margin: 0;
+        top: 65px;
+        max-width: 80%;
+    }
+    .about {
+        background-color: #0e0e0e;
+        position: relative;
+        overflow-x: hidden;
+        background-repeat: no-repeat;
+    }
+    .about p {
+        font-family: 'Lato', sans-serif;
+        line-height: 1.8;
+        font-size: 15px;
     }
     .about p,
     .about h1 {
-        text-align: left;
-        padding: 0 0 25px 10%;
-        width: 400px;
-    }
-    .about img {
-        display: inline;
-        position: absolute;
-        top: 0;
-        left: 640px;
-        height: 100%;
+        text-align: center;
     }
     .about .link {
-        padding-right: 0;
-        text-align: right;
+        display: block;
+    }
+    .about img {
+        display: none;
+    }
+    .player_info {
+        background: linear-gradient(to right, #0d8ab4, #035e87), #0d8ab4;
+    }
+    .player_info p {
+        margin: 0;
+        padding: 0;
     }
     .player_info ul {
-        margin-left: 300px;
-        text-align: left;
+        margin: 0 auto;
+        text-align: center;
+        width: 360px;
+        max-width: 100%;
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 2.2;
+        padding-top: 36px;
+    }
+    .player_info ul li {
+        padding: 0 20px;
+    }
+    .player_info ul li span {
+        font-weight: bold;
+        padding-right: 0.5em;
     }
     .player_info h1 {
-        position: absolute;
-        font-size: 130px;
-        left: 10px;
-        width: 400px;
-        opacity: 0.2;
-        line-height: 1;
+        font-size: 31px;
+        opacity: 0.85;
+        padding-top: 10px;
     }
     .player_info img {
-        position: absolute;
-        right: 0;
-        bottom: -115px;
-    }
-    .sponsers .link {
-        text-align: right;
-        padding-right: 40px;
-    }
-    footer ul {
         display: block;
+        margin: 0 auto;
+        position: relative;
+        bottom: -45px;
+    }
+    .events {
+        background-image: url(/georgeparkersquash-co-uk/_img/eventsbackground.jpg);
+        overflow-x: hidden;
+    }
+    .events h1 {
         text-align: center;
-        border-bottom: 1px solid #333;
-    }
-    footer ul li {
-        display: inline-block;
-        font-family: 'antoniobold', sans-serif;
-        padding: 45px 40px 25px;
-    }
-    footer ul li:first-child {
-        padding-left: 0;
-    }
-    footer ul li:last-child {
-        padding-right: 0;
-    }
-    footer ul li a {
-        color: #eee;
-        text-decoration: none;
-    }
-    footer ul li a:hover {
-        text-decoration: underline;
-    }
-    footer span {
-        width: 49.5%;
-        text-align: left;
-    }
-    footer span:last-child {
-        text-align: right;
-    }
-}
-
-@media (min-width: 1250px) {
-    .banner h1 {
-        width: 45%;
-    }
-    .banner h1 span {
-        font-size: 46px;
-    }
-    footer ul li {
-        padding: 45px 55px 25px;
-    }
-    .player_info ul {
-        margin-left: 400px;
-        text-align: left;
-    }
-    .events h1 {
-        padding-top: 100px;
-    }
-    .events .event_box .date {
-        padding-top: 58px;
-        padding-bottom: 16px;
-    }
-    .events .event_box .date div:first-child {
-        font-size: 31px;
-    }
-    .events .event_box .date div:last-child {
-        font-size: 73px;
-    }
-    .events .event_box .event_title h3 {
-        left: 20px;
-        padding-right: 30px;
-        font-size: 18px;
-    }
-    .events .event_box .event_title h2 {
-        left: 20px;
-        font-size: 31px;
-        padding-right: 30px;
-    }
-    .events .contain {
-        padding-top: 5%
-    }
-    .events h1 {
-        display: inline-block;
-        padding-right: 60px;
-    }
-    .events .event_box {
-        display: inline-block;
-        padding-right: 42px;
-        vertical-align: top;
-    }
-    .events .event_box:nth-child(3) {
-        padding-right: 0;
+        opacity: 0.85;
+        padding-top: 10px;
     }
     .events .link {
-        display: block;
-        text-align: right;
+        text-align: center;
     }
-}
-/*fonts*/
-
-@font-face {
-    font-family: 'antoniobold';
-    src: url('/fonts/antonio-bold-webfont.eot');
-    src: url('/fonts/antonio-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/antonio-bold-webfont.woff') format('woff'), url('/fonts/antonio-bold-webfont.ttf') format('truetype'), url('/fonts/antonio-bold-webfont.svg#antoniobold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'antoniolight';
-    src: url('/fonts/antonio-light-webfont.eot');
-    src: url('/fonts/antonio-light-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/antonio-light-webfont.woff') format('woff'), url('/fonts/antonio-light-webfont.ttf') format('truetype'), url('/fonts/antonio-light-webfont.svg#antoniolight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'antonioregular';
-    src: url('/fonts/antonio-regular-webfont.eot');
-    src: url('/fonts/antonio-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/antonio-regular-webfont.woff') format('woff'), url('/fonts/antonio-regular-webfont.ttf') format('truetype'), url('/fonts/antonio-regular-webfont.svg#antonioregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-/* Generated by Font Squirrel (http://www.fontsquirrel.com) on March 26, 2014 */
-/* Webfont: Lato-BlackItalic */
-
-@font-face {
-    font-family: 'LatoBlack';
-    src: url('/fonts/Lato-BlackItalic.eot');
-    /* IE9 Compat Modes */
+    .events .event_box {
+        display: block;
+        margin: 0 auto;
+        height: 250px;
+        font-family: 'antoniobold', sans-serif;
+        padding-bottom: 30px;
+        max-width: auto;
+        width: 100%;
+    }
+    .events .event_box .date {
+        background: linear-gradient(#0c82a9, #035e87), #0c82a9;
+        float: left;
+        text-align: center;
+        font-family: 'antoniolight', sans-serif;
+        padding: 50px 30px;
+        line-height: 1.1;
+    }
+    .events .event_box .date div:first-child {
+        font-size: 24px;
+        padding-bottom: 26px;
+    }
+    .events .event_box .date div:last-child {
+        font-size: 62px;
+    }
+    .events .event_box .event_title h3 {
+        position: relative;
+        left: 10px;
+        padding: 45px 30px 35px 20px;
+        font-size: 16px;
+        color: #444;
+        line-height: 1.4;
+    }
+    .events .event_box .event_title h2 {
+        position: relative;
+        left: 10px;
+        font-size: 22px;
+        padding-right: 10px;
+        line-height: 1.2;
+        padding-bottom: 30px;
+    }
+    .events .event_box .event_title {
+        background: white;
+        height: 100%;
+        color: #222;
+    }
+    .gallery {
+        background-image: url(/georgeparkersquash-co-uk/_img/gallerybg.jpg);
+        overflow: hidden;
+    }
+    .gallery h1 {
+        padding-top: 10px;
+        text-align: center;
+        opacity: 0.85;
+    }
+    .gallery .link {
+        text-align: center;
+    }
+    .gallery .link a {
+        color: #fff;
+    }
+    .image-gallery {
+        *zoom: 1;
+    }
+    .image-gallery:before,
+    .image-gallery:after {
+        content: " ";
+        display: table;
+    }
+    .image-gallery:after {
+        clear: both;
+    }
+    .image-gallery .image-gallery-item {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+    .image-gallery .image-gallery-item .image-gallery-item-image {
+        width: 100%;
+        height: 250px;
+    }
+    .image-gallery .image-gallery-item .image-gallery-item-image a {
+        display: block;
+    }
+    .image-gallery-title,
+    .image-gallery-item-updated,
+    .image-gallery-item-description,
+    .image-gallery-item-title,
+    .image-gallery-item-created {
+        /* hide the bits we most likely don't need */
+        display: none;
+    }
+    .image-gallery {
+        margin-bottom: 50px;
+    }
+    .sponsers {
+        background-image: url(/georgeparkersquash-co-uk/_img/sponserbg.jpg);
+        text-align: center;
+    }
+    .sponsers p {
+        padding: 0;
+        margin: 0;
+    }
+    .sponsers h1 {
+        padding-bottom: 0;
+        padding-top: 40px;
+        opacity: 0.85;
+    }
+    .sponsers li {
+        width: 100%;
+        padding: 2em 0;
+    }
+    .sponsers li img {
+        opacity: 0.8;
+        transform: scale(0.95);
+        -webkit-transform: scale(0.95);
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+    }
+    .sponsers li img:hover {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    .sponsers .link a {
+        color: #fff;
+    }
+    footer {
+        background-color: #0e0e0e;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    }
+    footer ul {
+        display: none;
+    }
+    footer span {
+        display: inline-block;
+        padding 40px;
+        width: 100%;
+        margin: 20px 0;
+        vertical-align: middle;
+        font-size: 14px;
+    }
+    footer span:last-child img {
+        width: 200px;
+    }
+    @media (min-height: 600px) {
+        .banner h1 {
+            font-size: 77px;
+            display: inline-block;
+            width: 50%;
+        }
+    }
+    @media (min-width: 375px) {
+        .events .event_box {
+            width: 440px;
+            max-width: 100%;
+        }
+        .image-gallery .image-gallery-item {
+            width: 50%;
+        }
+        .image-gallery .image-gallery-item:nth-of-type(5) {
+            display: none;
+        }
+       
+    }
+    @media (min-width: 600px) {
+        p {
+            font-size: 18px;
+        }
+        .sponsers ul {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .sponsers li {
+            display: inline-block;
+            width: auto;
+            padding: 2em 38px;
+            margin: 0;
+        }
+        .sponsers li:first-child {
+            padding-left: 0;
+        }
+        .sponsers li:nth-child(4) {
+            padding-right: 0;
+        }
+        .menu_button {
+            margin-top: 60px;
+            font-size: 55px;
+        }
+        .events .event_box .date {
+            padding-left: 42px;
+            padding-right: 42px;
+        }
+        .events .event_box .event_title h3 {
+            font-size: 18px;
+        }
+        .events .event_box .event_title h2 {
+            font-size: 26px;
+        }
+    }
+    @media (min-width: 1025px) {
+        .desk {
+            display: block;
+            position: relative;
+            z-index: 99;
+        }
+        .half_full,
+        .third_full,
+        .two_thirds_full {
+            padding: 100px 0;
+        }
+        nav.desk .menu {
+            display: block;
+            list-style-type: none;
+            text-align: right;
+            font-family: 'antoniobold', serif;
+        }
+        nav.desk .menu li {
+            display: inline-block;
+            padding: 0 10px;
+            margin-top: 16px;
+        }
+        nav.desk .menu li a {
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav.desk .menu li a.linkActive {
+            color: #0e8eb8;
+        }
+        nav.desk .menu li a:hover {
+            text-decoration: underline;
+        }
+        .menu_button {
+            display: none;
+        }
+        .about {
+            clear: both;
+            padding: 0;
+        }
+        .about .about-text {
+            padding: 100px 0;
+        }
+        .about p,
+        .about h1 {
+            text-align: left;
+        }
+        .about .link {
+            padding-right: 0;
+            text-align: left;
+        }
+        .about .about-text {
+            width: 35%;
+            float: left;
+            padding: 72px;
+        }
+        .about .about-image {
+            width: 65%;
+            float: left;
+        }
+        .about .about-image p {
+            margin: 0;
+        }
+        .player_info ul {
+            margin-left: 300px;
+            text-align: left;
+        }
+        .player_info h1 {
+            position: absolute;
+            font-size: 130px;
+            left: 10px;
+            top: 0;
+            width: 400px;
+            opacity: 0.2;
+            line-height: 1;
+        }
+        .player_info img {
+            position: absolute;
+            right: 0;
+            bottom: -100px;
+        }
+        .sponsers .link {
+            text-align: right;
+            padding-right: 40px;
+        }
+        footer ul {
+            display: block;
+            text-align: center;
+            border-bottom: 1px solid #333;
+            text-transform: uppercase;
+        }
+        footer ul li {
+            display: inline-block;
+            font-family: 'antoniobold', sans-serif;
+            padding: 45px 10px 25px;
+        }
+        footer ul li:first-child {
+            padding-left: 0;
+        }
+        footer ul li:last-child {
+            padding-right: 0;
+        }
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+        footer span {
+            width: 49.5%;
+            text-align: left;
+        }
+        footer span:last-child {
+            text-align: right;
+        }
+        .image-gallery .image-gallery-item {
+            margin-right: 0;
+            width: 20%;
+            margin-bottom: 0;
+        }
+        .image-gallery .image-gallery-item:nth-of-type(5) {
+            display: block; }
+        
+    }
+    @media (min-width: 1250px) {
+        .banner h1 {
+            width: 45%;
+        }
+        .banner h1 span {
+            font-size: 46px;
+        }
+        footer ul li {
+            padding: 45px 45px 25px;
+        }
+        .player_info ul {
+            margin-left: 400px;
+            text-align: left;
+        }
+        
+        
+        .events .event_box .date  {
+            padding-bottom: 30px;
+        }
+        
+        .events .event_box .date div:first-child {
+            font-size: 31px;
+        }
+        .events .event_box .date div:last-child {
+            font-size: 73px;
+        }
+       
+        
+        .events h1 {
+            display: inline-block;
+            padding-right: 60px;
+            padding-top: 60px;
+        }
+        .events .event_box {
+            display: inline-block;
+            padding-right: 42px;
+            vertical-align: top;
+        }
+        .events .event_box:nth-child(3) {
+            padding-right: 0;
+        }
+        .events .link {
+            display: block;
+            text-align: right;
+        }
+    }
+    /*fonts*/
     
-    src: url('/fonts/Lato-BlackItalic.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
+    @font-face {
+        font-family: 'antoniobold';
+        src: url('/georgeparkersquash-co-uk/_img/fonts/antonio-bold-webfont.eot');
+        src: url('/georgeparkersquash-co-uk/_img/fonts/antonio-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/georgeparkersquash-co-uk/_img/fonts/antonio-bold-webfont.woff') format('woff'), url('/georgeparkersquash-co-uk/_img/fonts/antonio-bold-webfont.ttf') format('truetype'), url('/georgeparkersquash-co-uk/_img/fonts/antonio-bold-webfont.svg#antoniobold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'antoniolight';
+        src: url('/georgeparkersquash-co-uk/_img/fonts/antonio-light-webfont.eot');
+        src: url('/georgeparkersquash-co-uk/_img/fonts/antonio-light-webfont.eot?#iefix') format('embedded-opentype'), url('/georgeparkersquash-co-uk/_img/fonts/antonio-light-webfont.woff') format('woff'), url('/georgeparkersquash-co-uk/_img/fonts/antonio-light-webfont.ttf') format('truetype'), url('/georgeparkersquash-co-uk/_img/fonts/antonio-light-webfont.svg#antoniolight') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'antonioregular';
+        src: url('/georgeparkersquash-co-uk/_img/fonts/antonio-regular-webfont.eot');
+        src: url('/georgeparkersquash-co-uk/_img/fonts/antonio-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/georgeparkersquash-co-uk/_img/fonts/antonio-regular-webfont.woff') format('woff'), url('/georgeparkersquash-co-uk/_img/fonts/antonio-regular-webfont.ttf') format('truetype'), url('/georgeparkersquash-co-uk/_img/fonts/antonio-regular-webfont.svg#antonioregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /* Generated by Font Squirrel (http://www.fontsquirrel.com) on March 26, 2014 */
+    /* Webfont: Lato-BlackItalic */
     
-    url('/fonts/Lato-BlackItalic.woff') format('woff'),
-    /* Modern Browsers */
+    @font-face {
+        font-family: 'LatoBlack';
+        src: url('/georgeparkersquash-co-uk/_img/fonts/Lato-BlackItalic.eot');
+        /* IE9 Compat Modes */
+        src: url('/georgeparkersquash-co-uk/_img/fonts/Lato-BlackItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/georgeparkersquash-co-uk/_img/fonts/Lato-BlackItalic.woff') format('woff'), /* Modern Browsers */
+        url('/georgeparkersquash-co-uk/_img/fonts/Lato-BlackItalic.ttf') format('truetype');
+        font-style: italic;
+        font-weight: normal;
+        text-rendering: optimizeLegibility;
+    }
+    /* Webfont: Lato-Regular */
     
-    url('/fonts/Lato-BlackItalic.ttf') format('truetype');
-    font-style: italic;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-/* Webfont: Lato-Regular */
-
-@font-face {
-    font-family: 'Lato';
-    src: url('/fonts/Lato-Regular.eot');
-    /* IE9 Compat Modes */
+    @font-face {
+        font-family: 'Lato';
+        src: url('/georgeparkersquash-co-uk/_img/fonts/Lato-Regular.eot');
+        /* IE9 Compat Modes */
+        src: url('/georgeparkersquash-co-uk/_img/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/georgeparkersquash-co-uk/_img/fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+        url('/georgeparkersquash-co-uk/_img/fonts/Lato-Regular.ttf') format('truetype');
+        font-style: normal;
+        font-weight: normal;
+        text-rendering: optimizeLegibility;
+    }
+    @font-face {
+        font-family: 'icomoon';
+        src: url('/georgeparkersquash-co-uk/_img/fonts/icomoon.eot?wycmvo');
+        src: url('/georgeparkersquash-co-uk/_img/fonts/icomoon.eot?#iefixwycmvo') format('embedded-opentype'), url('/georgeparkersquash-co-uk/_img/fonts/icomoon.ttf?wycmvo') format('truetype'), url('/georgeparkersquash-co-uk/_img/fonts/icomoon.woff?wycmvo') format('woff'), url('/georgeparkersquash-co-uk/_img/fonts/icomoon.svg?wycmvo#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /* icomoon icons */
     
-    src: url('/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    
-    url('/fonts/Lato-Regular.woff') format('woff'),
-    /* Modern Browsers */
-    
-    url('/fonts/Lato-Regular.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
+    [class^="icon-"],
+    [class*=" icon-"] {
+        font-family: 'icomoon';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .icon-cross:before {
+        content: "\e601";
+    }
+    .icon-menu:before {
+        content: "\e600";
+    }
